@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Events</title>
+    <script src="jqEvents.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+    <center>
+        <h1>Jquery Events</h1>
+        <p>Hello!</p>
+        <p>My Name is Shubham</p>
+        <p>How are you ?</p>
+        <p>I am fine </p>
+
+    </center>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+
+        // $(document).click(function () {
+
+        //     console.log("you clicked on p")
+        //     $("p").hide();
+
+        // });
+
+
+        $("p").on({
+            // click: function () {
+
+            //     // $("p").hide(1000);
+            //     alert("You entered p1!");
+
+            // },
+
+            mouseenter: function () {
+
+                $("p").css("background-color", "red");
+
+            },
+
+            mouseleave: function () {
+
+                $("p").css("background-color", "blue");
+
+            }
+
+        });
+
+        // $("p").slideDown(1000);
+
+
+    });
+
+
+    console.log("Welcome")
+</script>
+
+
+</html>

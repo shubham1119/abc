@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firts javaScript</title>
+</head>
+
+<body>
+
+    <center>
+        <h1 id="id1">
+            Demo Jquery
+        </h1>
+    </center>
+    <!-- <button>Enter name</button>
+    <script src="Script.js"></script>
+    <script>
+        var n = true;
+        consol.log(typeof n);
+    </script> -->
+
+    <p>
+        hello!<br>
+
+    </p>
+    <p>
+
+        hi<br>
+
+    </p>
+    <p>
+
+        how are you
+    </p>
+
+    <center>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+    </center>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script>
+    // $("h1").click(function () {
+    //     $(this).hide();
+    // });
+    $(document).ready(function () {
+
+        $("#show").click(function () {
+            $("h1").show();
+
+        });
+
+        $("#hide").click(function () {
+            $("h1").hide();
+        });
+
+        $("p").click(function () {
+            $(this).hide(500);
+        });
+
+
+
+
+    });
+
+</script>
+
+</html>

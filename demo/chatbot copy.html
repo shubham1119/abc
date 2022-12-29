@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        know = {
+            "hello": "hi",
+            "how are you": "good",
+            "ok": ":)"
+        };
+        function talk() {
+            var user = document.getElementById("userbox").value;
+            document.getElementById("userbox").value = "";
+            document.getElementById("chatlog").innerHTML += user + "<br>";
+            if (user in know) {
+                document.getElementById("chatlog").innerHTML += know[user] + "<br>";
+            }
+            else {
+                document.getElementById("chatlog").innerHTML += "i don't understand...<br>";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p id="chatlog">- - C H A T - -</p>
+    <input id="userbox" type="text" onkeydown="if(event.keycode==13){talk()}">
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Autocomplete</title>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+
+    <script>
+        $(function () {
+            var availableTags = [
+                "ActionScript",
+                "Bootstrap",
+                "C",
+                "C++",
+                "python",
+                "shubham",
+                "sumit",
+                "database",
+                "data",
+                "computer network",
+                "network",
+                "schema",
+                "store",
+                "new",
+                "search"
+            ];
+            $("#tags").autocomplete({
+                source: availableTags
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <center>
+        <h1>
+            <label for="tags">Tags: </label>
+            <input id="tags">
+
+        </h1>
+    </center>
+
+</body>
+
+</html>
